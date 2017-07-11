@@ -1,0 +1,6 @@
+Python is named after 'Monty Python and the flying circus', a popular show from the 70s
+Python does not support pointers
+Python uses dynamic typing and a mix of reference counting and a cycle-detecting garbage collector for memory management. An important feature of Python is dynamic name resolution (late binding), which binds method and variable names during program execution.
+The core philosophy of the language is summarized by the document The Zen of Python (PEP 20), which includes aphorisms such as:Beautiful is better than ugly;Explicit is better than implicit;Simple is better than complex;Complex is better than complicated;Readability counts
+Rather than requiring all desired functionality to be built into the language's core, Python was designed to be highly extensible
+Users and admirers of Python, especially those considered knowledgeable or experienced, are often referred to as Pythonists, Pythonistas, and Pythoneers
