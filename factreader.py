@@ -4,6 +4,7 @@ Developed by: Anand Nandakumar
 """
 
 import requests
+import json
 
 def factreader(factfile,linelist):
 	lines_old = []
