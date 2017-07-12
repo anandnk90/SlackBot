@@ -21,7 +21,7 @@ def factreader(factfile,linelist):
 				url='https://hooks.slack.com/services/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'
 				payload = {"channel": "#dev", "username": "FactBot", "text": line}
 				headers = {'Content-type': 'application/json'}
-				requests.post(url, data=json.dumps(data), headers=headers)
+				requests.post(url, data=json.dumps(payload), headers=headers)
 				
 				lines_new.append(lines_old)
 				lines_new.append(i)
