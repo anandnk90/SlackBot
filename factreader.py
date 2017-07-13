@@ -4,6 +4,7 @@ Developed by: Anand Nandakumar
 """
 
 import requests
+import json
 
 def factreader(factfile,linelist):
 	lines_old = []
@@ -16,11 +17,11 @@ def factreader(factfile,linelist):
 		for line in in_file:
 			i+=1
 			if str(i) not in lines_old and len(lines_new)==0:
-				print(line)
-				url='https://hooks.slack.com/services/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'
-				payload = {"channel": "#dev", "username": "FactBot", "text": line}
+				#Slackhook URL to be added
+				url=''
+				payload = {"channel": "#general", "username": "FactBot", "text": line}
 				headers = {'Content-type': 'application/json'}
-				requests.post(url, data=json.dumps(data), headers=headers)
+				requests.post(url, data=json.dumps(payload), headers=headers)
 				
 				lines_new.append(lines_old)
 				lines_new.append(i)
